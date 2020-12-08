@@ -1,3 +1,4 @@
+import os,sys
 from configparser import ConfigParser
 import os
 from handle_func.handle_path import CONF_DIR

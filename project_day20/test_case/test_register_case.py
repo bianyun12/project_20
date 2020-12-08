@@ -1,3 +1,4 @@
+import os,sys
 import unittest
 from comm_modul import myddt
 from handle_func.handle_excel import handle_excel_class

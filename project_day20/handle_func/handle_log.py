@@ -1,3 +1,4 @@
+import os,sys
 import logging
 from logging.handlers import RotatingFileHandler,TimedRotatingFileHandler
 from handle_func.handle_path import LOG_DIR,CONF_DIR
