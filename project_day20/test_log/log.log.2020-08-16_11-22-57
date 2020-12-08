@@ -1,0 +1,67 @@
+2020-08-16 11:22:54,142 - [test_login_case.py-->line:30] - ERROR: 登录失败-密码长度等于16执行失败
+2020-08-16 11:22:54,142 - [test_login_case.py-->line:31] - ERROR: 0 != 1001
+Traceback (most recent call last):
+  File "/Users/mlamp/Desktop/python/python-project/project_day20/test_case/test_login_case.py", line 26, in test_login
+    self.assertEqual(expected['code'],result['code'])
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 0 != 1001
+2020-08-16 11:22:54,688 - [test_register_case.py-->line:29] - ERROR: 注册成功执行失败
+2020-08-16 11:22:54,688 - [test_register_case.py-->line:30] - ERROR: 0 != 2
+Traceback (most recent call last):
+  File "/Users/mlamp/Desktop/python/python-project/project_day20/test_case/test_register_case.py", line 25, in test_register
+    self.assertEqual(expected['code'],result['code'])
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 0 != 2
+2020-08-16 11:22:55,178 - [test_register_case.py-->line:29] - ERROR: 注册失败-手机号为字符串执行失败
+2020-08-16 11:22:55,179 - [test_register_case.py-->line:30] - ERROR: '无效的手机格式' != '账号已存在'
+- 无效的手机格式
++ 账号已存在
+Traceback (most recent call last):
+  File "/Users/mlamp/Desktop/python/python-project/project_day20/test_case/test_register_case.py", line 26, in test_register
+    self.assertEqual(expected['msg'],result['msg'])
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 1233, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 693, in fail
+    raise self.failureException(msg)
+AssertionError: '无效的手机格式' != '账号已存在'
+- 无效的手机格式
++ 账号已存在
+
+2020-08-16 11:22:56,730 - [test_register_case.py-->line:29] - ERROR: 注册成功-类型值为1执行失败
+2020-08-16 11:22:56,730 - [test_register_case.py-->line:30] - ERROR: 0 != 2
+Traceback (most recent call last):
+  File "/Users/mlamp/Desktop/python/python-project/project_day20/test_case/test_register_case.py", line 25, in test_register
+    self.assertEqual(expected['code'],result['code'])
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 0 != 2
+2020-08-16 11:22:56,898 - [test_register_case.py-->line:29] - ERROR: 注册成功-类型值为0执行失败
+2020-08-16 11:22:56,898 - [test_register_case.py-->line:30] - ERROR: 0 != 2
+Traceback (most recent call last):
+  File "/Users/mlamp/Desktop/python/python-project/project_day20/test_case/test_register_case.py", line 25, in test_register
+    self.assertEqual(expected['code'],result['code'])
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 0 != 2
+2020-08-16 11:22:57,253 - [test_register_case.py-->line:29] - ERROR: 注册成功-存在注册名格式正确执行失败
+2020-08-16 11:22:57,253 - [test_register_case.py-->line:30] - ERROR: 0 != 2
+Traceback (most recent call last):
+  File "/Users/mlamp/Desktop/python/python-project/project_day20/test_case/test_register_case.py", line 25, in test_register
+    self.assertEqual(expected['code'],result['code'])
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 0 != 2

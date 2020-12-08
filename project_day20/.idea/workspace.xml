@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6f1772cc-fda7-473e-9941-dced3194d47b" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1fylaolHGLm1elownkwHkEI8r2b" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/day20_NO1" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/test_data" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.run">
+    <configuration name="get_token" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="project_day20" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day21_No2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day21_No2/get_token.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="run" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="project_day20" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/run.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="token_recharge" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="project_day20" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day21_No2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day21_No2/token_recharge.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests in test_login_case.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="project_day20" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_case" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test_case/test_login_case.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests in test_register_case.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="project_day20" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_case" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test_case/test_register_case.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.run" />
+        <item itemvalue="Python tests.Unittests in test_login_case.py" />
+        <item itemvalue="Python tests.Unittests in test_register_case.py" />
+        <item itemvalue="Python.get_token" />
+        <item itemvalue="Python.token_recharge" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6f1772cc-fda7-473e-9941-dced3194d47b" name="Default Changelist" comment="" />
+      <created>1597198279185</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1597198279185</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.log" />
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.ini" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1419" height="204" key="GridCell.Tab.0.bottom" timestamp="1597563476437">
+      <screen x="0" y="23" width="1440" height="828" />
+    </state>
+    <state width="1419" height="205" key="GridCell.Tab.0.bottom/0.23.1440.801@0.23.1440.801" timestamp="1597216082724" />
+    <state width="1419" height="255" key="GridCell.Tab.0.bottom/0.23.1440.804@0.23.1440.804" timestamp="1597222986465" />
+    <state width="1419" height="205" key="GridCell.Tab.0.bottom/0.23.1440.806@0.23.1440.806" timestamp="1597219776043" />
+    <state width="1419" height="204" key="GridCell.Tab.0.bottom/0.23.1440.807@0.23.1440.807" timestamp="1597548388684" />
+    <state width="1419" height="207" key="GridCell.Tab.0.bottom/0.23.1440.808@0.23.1440.808" timestamp="1597200927193" />
+    <state width="1419" height="228" key="GridCell.Tab.0.bottom/0.23.1440.811@0.23.1440.811" timestamp="1597401653176" />
+    <state width="1419" height="213" key="GridCell.Tab.0.bottom/0.23.1440.812@0.23.1440.812" timestamp="1597393334485" />
+    <state width="1419" height="188" key="GridCell.Tab.0.bottom/0.23.1440.813@0.23.1440.813" timestamp="1597394349857" />
+    <state width="1419" height="228" key="GridCell.Tab.0.bottom/0.23.1440.814@0.23.1440.814" timestamp="1597506868246" />
+    <state width="1419" height="228" key="GridCell.Tab.0.bottom/0.23.1440.821@0.23.1440.821" timestamp="1597489748543" />
+    <state width="1419" height="228" key="GridCell.Tab.0.bottom/0.23.1440.822@0.23.1440.822" timestamp="1597488579075" />
+    <state width="1419" height="204" key="GridCell.Tab.0.bottom/0.23.1440.828@0.23.1440.828" timestamp="1597563476437" />
+    <state width="1419" height="204" key="GridCell.Tab.0.center" timestamp="1597563476436">
+      <screen x="0" y="23" width="1440" height="828" />
+    </state>
+    <state width="1419" height="205" key="GridCell.Tab.0.center/0.23.1440.801@0.23.1440.801" timestamp="1597216082723" />
+    <state width="1419" height="255" key="GridCell.Tab.0.center/0.23.1440.804@0.23.1440.804" timestamp="1597222986465" />
+    <state width="1419" height="205" key="GridCell.Tab.0.center/0.23.1440.806@0.23.1440.806" timestamp="1597219776042" />
+    <state width="1419" height="204" key="GridCell.Tab.0.center/0.23.1440.807@0.23.1440.807" timestamp="1597548388683" />
+    <state width="1419" height="207" key="GridCell.Tab.0.center/0.23.1440.808@0.23.1440.808" timestamp="1597200927192" />
+    <state width="1419" height="228" key="GridCell.Tab.0.center/0.23.1440.811@0.23.1440.811" timestamp="1597401653175" />
+    <state width="1419" height="213" key="GridCell.Tab.0.center/0.23.1440.812@0.23.1440.812" timestamp="1597393334485" />
+    <state width="1419" height="188" key="GridCell.Tab.0.center/0.23.1440.813@0.23.1440.813" timestamp="1597394349856" />
+    <state width="1419" height="228" key="GridCell.Tab.0.center/0.23.1440.814@0.23.1440.814" timestamp="1597506868245" />
+    <state width="1419" height="228" key="GridCell.Tab.0.center/0.23.1440.821@0.23.1440.821" timestamp="1597489748542" />
+    <state width="1419" height="228" key="GridCell.Tab.0.center/0.23.1440.822@0.23.1440.822" timestamp="1597488579074" />
+    <state width="1419" height="204" key="GridCell.Tab.0.center/0.23.1440.828@0.23.1440.828" timestamp="1597563476436" />
+    <state width="1419" height="204" key="GridCell.Tab.0.left" timestamp="1597563476436">
+      <screen x="0" y="23" width="1440" height="828" />
+    </state>
+    <state width="1419" height="205" key="GridCell.Tab.0.left/0.23.1440.801@0.23.1440.801" timestamp="1597216082723" />
+    <state width="1419" height="255" key="GridCell.Tab.0.left/0.23.1440.804@0.23.1440.804" timestamp="1597222986465" />
+    <state width="1419" height="205" key="GridCell.Tab.0.left/0.23.1440.806@0.23.1440.806" timestamp="1597219776041" />
+    <state width="1419" height="204" key="GridCell.Tab.0.left/0.23.1440.807@0.23.1440.807" timestamp="1597548388682" />
+    <state width="1419" height="207" key="GridCell.Tab.0.left/0.23.1440.808@0.23.1440.808" timestamp="1597200927191" />
+    <state width="1419" height="228" key="GridCell.Tab.0.left/0.23.1440.811@0.23.1440.811" timestamp="1597401653174" />
+    <state width="1419" height="213" key="GridCell.Tab.0.left/0.23.1440.812@0.23.1440.812" timestamp="1597393334484" />
+    <state width="1419" height="188" key="GridCell.Tab.0.left/0.23.1440.813@0.23.1440.813" timestamp="1597394349856" />
+    <state width="1419" height="228" key="GridCell.Tab.0.left/0.23.1440.814@0.23.1440.814" timestamp="1597506868245" />
+    <state width="1419" height="228" key="GridCell.Tab.0.left/0.23.1440.821@0.23.1440.821" timestamp="1597489748541" />
+    <state width="1419" height="228" key="GridCell.Tab.0.left/0.23.1440.822@0.23.1440.822" timestamp="1597488579074" />
+    <state width="1419" height="204" key="GridCell.Tab.0.left/0.23.1440.828@0.23.1440.828" timestamp="1597563476436" />
+    <state width="1419" height="204" key="GridCell.Tab.0.right" timestamp="1597563476437">
+      <screen x="0" y="23" width="1440" height="828" />
+    </state>
+    <state width="1419" height="205" key="GridCell.Tab.0.right/0.23.1440.801@0.23.1440.801" timestamp="1597216082723" />
+    <state width="1419" height="255" key="GridCell.Tab.0.right/0.23.1440.804@0.23.1440.804" timestamp="1597222986465" />
+    <state width="1419" height="205" key="GridCell.Tab.0.right/0.23.1440.806@0.23.1440.806" timestamp="1597219776042" />
+    <state width="1419" height="204" key="GridCell.Tab.0.right/0.23.1440.807@0.23.1440.807" timestamp="1597548388683" />
+    <state width="1419" height="207" key="GridCell.Tab.0.right/0.23.1440.808@0.23.1440.808" timestamp="1597200927192" />
+    <state width="1419" height="228" key="GridCell.Tab.0.right/0.23.1440.811@0.23.1440.811" timestamp="1597401653175" />
+    <state width="1419" height="213" key="GridCell.Tab.0.right/0.23.1440.812@0.23.1440.812" timestamp="1597393334485" />
+    <state width="1419" height="188" key="GridCell.Tab.0.right/0.23.1440.813@0.23.1440.813" timestamp="1597394349856" />
+    <state width="1419" height="228" key="GridCell.Tab.0.right/0.23.1440.814@0.23.1440.814" timestamp="1597506868245" />
+    <state width="1419" height="228" key="GridCell.Tab.0.right/0.23.1440.821@0.23.1440.821" timestamp="1597489748542" />
+    <state width="1419" height="228" key="GridCell.Tab.0.right/0.23.1440.822@0.23.1440.822" timestamp="1597488579075" />
+    <state width="1419" height="204" key="GridCell.Tab.0.right/0.23.1440.828@0.23.1440.828" timestamp="1597563476437" />
+    <state width="1419" height="255" key="GridCell.Tab.1.bottom" timestamp="1597222986466">
+      <screen x="0" y="23" width="1440" height="804" />
+    </state>
+    <state width="1419" height="255" key="GridCell.Tab.1.bottom/0.23.1440.801@0.23.1440.801" timestamp="1597216027516" />
+    <state width="1419" height="255" key="GridCell.Tab.1.bottom/0.23.1440.804@0.23.1440.804" timestamp="1597222986466" />
+    <state width="1419" height="255" key="GridCell.Tab.1.center" timestamp="1597222986466">
+      <screen x="0" y="23" width="1440" height="804" />
+    </state>
+    <state width="1419" height="255" key="GridCell.Tab.1.center/0.23.1440.801@0.23.1440.801" timestamp="1597216027516" />
+    <state width="1419" height="255" key="GridCell.Tab.1.center/0.23.1440.804@0.23.1440.804" timestamp="1597222986466" />
+    <state width="1419" height="255" key="GridCell.Tab.1.left" timestamp="1597222986466">
+      <screen x="0" y="23" width="1440" height="804" />
+    </state>
+    <state width="1419" height="255" key="GridCell.Tab.1.left/0.23.1440.801@0.23.1440.801" timestamp="1597216027515" />
+    <state width="1419" height="255" key="GridCell.Tab.1.left/0.23.1440.804@0.23.1440.804" timestamp="1597222986466" />
+    <state width="1419" height="255" key="GridCell.Tab.1.right" timestamp="1597222986466">
+      <screen x="0" y="23" width="1440" height="804" />
+    </state>
+    <state width="1419" height="255" key="GridCell.Tab.1.right/0.23.1440.801@0.23.1440.801" timestamp="1597216027516" />
+    <state width="1419" height="255" key="GridCell.Tab.1.right/0.23.1440.804@0.23.1440.804" timestamp="1597222986466" />
+    <state x="221" y="60" key="SettingsEditor" timestamp="1597212945336">
+      <screen x="0" y="23" width="1440" height="804" />
+    </state>
+    <state x="221" y="60" key="SettingsEditor/0.23.1440.801@0.23.1440.801" timestamp="1597200294713" />
+    <state x="221" y="60" key="SettingsEditor/0.23.1440.804@0.23.1440.804" timestamp="1597212945336" />
+    <state x="385" y="155" width="670" height="689" key="search.everywhere.popup" timestamp="1597397592394">
+      <screen x="0" y="23" width="1440" height="821" />
+    </state>
+    <state x="385" y="153" width="670" height="676" key="search.everywhere.popup/0.23.1440.806@0.23.1440.806" timestamp="1597221157616" />
+    <state x="385" y="155" width="670" height="689" key="search.everywhere.popup/0.23.1440.821@0.23.1440.821" timestamp="1597397592394" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/day19_No2/token_recharge.py</url>
+          <line>2</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

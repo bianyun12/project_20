@@ -1,0 +1,50 @@
+2020-12-08 09:59:12,040 - [test_login_case.py-->line:30] - ERROR: 登录成功执行失败
+2020-12-08 09:59:12,044 - [test_login_case.py-->line:31] - ERROR: 0 != 1001
+Traceback (most recent call last):
+  File "/Users/mlamp/Desktop/python/python-project/project_day20/test_case/test_login_case.py", line 26, in test_login
+    self.assertEqual(expected['code'],result['code'])
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 0 != 1001
+2020-12-08 09:59:13,698 - [test_login_case.py-->line:30] - ERROR: 登录失败-密码长度等于8执行失败
+2020-12-08 09:59:13,698 - [test_login_case.py-->line:31] - ERROR: 0 != 1001
+Traceback (most recent call last):
+  File "/Users/mlamp/Desktop/python/python-project/project_day20/test_case/test_login_case.py", line 26, in test_login
+    self.assertEqual(expected['code'],result['code'])
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 0 != 1001
+2020-12-08 09:59:14,028 - [test_login_case.py-->line:30] - ERROR: 登录失败-密码长度等于16执行失败
+2020-12-08 09:59:14,028 - [test_login_case.py-->line:31] - ERROR: 0 != 1001
+Traceback (most recent call last):
+  File "/Users/mlamp/Desktop/python/python-project/project_day20/test_case/test_login_case.py", line 26, in test_login
+    self.assertEqual(expected['code'],result['code'])
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 0 != 1001
+2020-12-08 09:59:15,271 - [test_register_case.py-->line:29] - ERROR: 注册失败-账号已注册执行失败
+2020-12-08 09:59:15,271 - [test_register_case.py-->line:30] - ERROR: 2 != 0
+Traceback (most recent call last):
+  File "/Users/mlamp/Desktop/python/python-project/project_day20/test_case/test_register_case.py", line 25, in test_register
+    self.assertEqual(expected['code'],result['code'])
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2020-12-08 09:59:15,701 - [test_register_case.py-->line:29] - ERROR: 注册失败-手机号为字符串执行失败
+2020-12-08 09:59:15,701 - [test_register_case.py-->line:30] - ERROR: 2 != 0
+Traceback (most recent call last):
+  File "/Users/mlamp/Desktop/python/python-project/project_day20/test_case/test_register_case.py", line 25, in test_register
+    self.assertEqual(expected['code'],result['code'])
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
