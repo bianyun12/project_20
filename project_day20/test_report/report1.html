@@ -109,7 +109,6 @@
             height: 30px;
             margin: 0;
             padding-left: 3em;
-            padding-right:3em;
             font: none 18px/24px "Microsoft YaHei UI";
             color: #9e141a;
         }
@@ -152,15 +151,15 @@
             </li>
             <li class="list-group-item">
                 <button type="button" class="btn btn-success">开始时间</button>
-                <span class="text-dark">2020-12-08 15:37:49</span>
+                <span class="text-dark">2020-12-08 16:35:08</span>
             </li>
             <li class="list-group-item">
                 <button type="button" class="btn btn-success">执行时间</button>
-                <span class="text-dark">0.00 S</span>
+                <span class="text-dark">12.08 S</span>
             </li>
             <li class="list-group-item">
                 <button type="button" class="btn btn-success">用例总数</button>
-                <span class="text-dark">2</span>
+                <span class="text-dark">30</span>
             </li>
 
 
@@ -171,15 +170,15 @@
 
             <li class="list-group-item">
                 <button type="button" class="btn btn-success">成功用例</button>
-                <span class="text-success">0</span>
+                <span class="text-success">19</span>
             </li>
             <li class="list-group-item">
                 <button type="button" class="btn btn-danger">失败用例</button>
-                <span class="text-warning">0</span>
+                <span class="text-warning">11</span>
             </li>
             <li class="list-group-item">
                 <button type="button" class="btn btn-warning">错误用例</button>
-                <span class="text-danger">2</span>
+                <span class="text-danger">0</span>
             </li>
             <li class="list-group-item">
                 <button type="button" class="btn btn-secondary">跳过用例</button>
@@ -221,9 +220,9 @@
                     <select id="testClass">
                         <option>所有</option>
                         
-                            <option>_FailedTest</option>
+                            <option>test_login_class</option>
                         
-                            <option>_FailedTest</option>
+                            <option>test_register_class</option>
                         
                     </select>
 
@@ -251,12 +250,12 @@
             
                 <tr>
                     <td>1</td>
-                    <td class="_FailedTest">_FailedTest</td>
-                    <td>test_login_case</td>
-                    <td>None</td>
-                    <td>0.000696s</td>
+                    <td class="test_login_class">test_login_class</td>
+                    <td>test_login_01</td>
+                    <td>登录成功</td>
+                    <td>3.73s</td>
                     
-                        <td class="text-warning">错误</td>
+                        <td class="text-danger">失败</td>
                     
                     <td>
                         <button type="button" class="btn btn-success btn_info">查看详情</button>
@@ -265,44 +264,53 @@
 
                 <tr class="test_log">
 
-                    <td colspan="7" class="small text-muted" style=" word-wrap:break-word; word-break:break-all">
+                    <td colspan="7">
+                        
+
+                            <pre>test_login_01 (test_login_case.test_login_class)执行——>【失败】
+</pre>
                         
 
                             <pre>Traceback (most recent call last):
 </pre>
                         
 
-                            <pre>  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 59, in testPartExecutor
+                            <pre>  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 59, in testPartExecutor
     yield
 </pre>
                         
 
-                            <pre>  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 615, in run
+                            <pre>  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 628, in run
     testMethod()
 </pre>
                         
 
-                            <pre>  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.7/lib/python3.7/unittest/loader.py", line 34, in testFailure
-    raise self._exception
+                            <pre>  File "/Users/mlamp/Desktop/python/python-project/project_day20/comm_modul/myddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
 </pre>
                         
 
-                            <pre>ImportError: Failed to import test module: test_login_case
-Traceback (most recent call last):
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.7/lib/python3.7/unittest/loader.py", line 436, in _find_test_path
-    module = self._get_module_from_name(name)
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.7/lib/python3.7/unittest/loader.py", line 377, in _get_module_from_name
-    __import__(name)
-  File "/Users/mlamp/Desktop/python/python-project/project_day20/test_case/test_login_case.py", line 5, in <module>
-    from handle_func.handle_excel import handle_excel_class
-  File "/Users/mlamp/Desktop/python/python-project/project_day20/handle_func/handle_excel.py", line 2, in <module>
-    import openpyxl
-ModuleNotFoundError: No module named 'openpyxl'
-
+                            <pre>  File "/Users/mlamp/Desktop/python/python-project/project_day20/test_case/test_login_case.py", line 33, in test_login
+    raise E
 </pre>
                         
 
-                            <pre>test_login_case (unittest.loader._FailedTest)执行——>【错误Error】
+                            <pre>  File "/Users/mlamp/Desktop/python/python-project/project_day20/test_case/test_login_case.py", line 27, in test_login
+    self.assertEqual(expected['code'],result['code'])
+</pre>
+                        
+
+                            <pre>  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+</pre>
+                        
+
+                            <pre>  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+</pre>
+                        
+
+                            <pre>AssertionError: 0 != 1001
 </pre>
                         
                         
@@ -311,12 +319,12 @@ ModuleNotFoundError: No module named 'openpyxl'
             
                 <tr>
                     <td>2</td>
-                    <td class="_FailedTest">_FailedTest</td>
-                    <td>test_register_case</td>
-                    <td>None</td>
-                    <td>0.000162s</td>
+                    <td class="test_login_class">test_login_class</td>
+                    <td>test_login_02</td>
+                    <td>登录失败-账号未注册</td>
+                    <td>0.33s</td>
                     
-                        <td class="text-warning">错误</td>
+                        <td class="text-success">成功</td>
                     
                     <td>
                         <button type="button" class="btn btn-success btn_info">查看详情</button>
@@ -325,44 +333,1176 @@ ModuleNotFoundError: No module named 'openpyxl'
 
                 <tr class="test_log">
 
-                    <td colspan="7" class="small text-muted" style=" word-wrap:break-word; word-break:break-all">
+                    <td colspan="7">
+                        
+
+                            <pre>test_login_02 (test_login_case.test_login_class)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>3</td>
+                    <td class="test_login_class">test_login_class</td>
+                    <td>test_login_03</td>
+                    <td>登录失败-手机为空</td>
+                    <td>0.145s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>test_login_03 (test_login_case.test_login_class)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>4</td>
+                    <td class="test_login_class">test_login_class</td>
+                    <td>test_login_04</td>
+                    <td>注册失败-手机号长度10位</td>
+                    <td>0.164s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>test_login_04 (test_login_case.test_login_class)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>5</td>
+                    <td class="test_login_class">test_login_class</td>
+                    <td>test_login_05</td>
+                    <td>注册失败-手机号长度12位</td>
+                    <td>0.131s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>test_login_05 (test_login_case.test_login_class)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>6</td>
+                    <td class="test_login_class">test_login_class</td>
+                    <td>test_login_06</td>
+                    <td>注册失败-手机号非正确手机号</td>
+                    <td>0.234s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>test_login_06 (test_login_case.test_login_class)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>7</td>
+                    <td class="test_login_class">test_login_class</td>
+                    <td>test_login_07</td>
+                    <td>登录失败-密码为空</td>
+                    <td>0.141s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>test_login_07 (test_login_case.test_login_class)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>8</td>
+                    <td class="test_login_class">test_login_class</td>
+                    <td>test_login_08</td>
+                    <td>登录失败-密码长度小于8</td>
+                    <td>1.37s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>test_login_08 (test_login_case.test_login_class)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>9</td>
+                    <td class="test_login_class">test_login_class</td>
+                    <td>test_login_09</td>
+                    <td>登录失败-密码长度等于8</td>
+                    <td>0.376s</td>
+                    
+                        <td class="text-danger">失败</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>test_login_09 (test_login_case.test_login_class)执行——>【失败】
+</pre>
                         
 
                             <pre>Traceback (most recent call last):
 </pre>
                         
 
-                            <pre>  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 59, in testPartExecutor
+                            <pre>  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 59, in testPartExecutor
     yield
 </pre>
                         
 
-                            <pre>  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 615, in run
+                            <pre>  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 628, in run
     testMethod()
 </pre>
                         
 
-                            <pre>  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.7/lib/python3.7/unittest/loader.py", line 34, in testFailure
-    raise self._exception
+                            <pre>  File "/Users/mlamp/Desktop/python/python-project/project_day20/comm_modul/myddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
 </pre>
                         
 
-                            <pre>ImportError: Failed to import test module: test_register_case
-Traceback (most recent call last):
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.7/lib/python3.7/unittest/loader.py", line 436, in _find_test_path
-    module = self._get_module_from_name(name)
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.7/lib/python3.7/unittest/loader.py", line 377, in _get_module_from_name
-    __import__(name)
-  File "/Users/mlamp/Desktop/python/python-project/project_day20/test_case/test_register_case.py", line 4, in <module>
-    from handle_func.handle_excel import handle_excel_class
-  File "/Users/mlamp/Desktop/python/python-project/project_day20/handle_func/handle_excel.py", line 2, in <module>
-    import openpyxl
-ModuleNotFoundError: No module named 'openpyxl'
-
+                            <pre>  File "/Users/mlamp/Desktop/python/python-project/project_day20/test_case/test_login_case.py", line 33, in test_login
+    raise E
 </pre>
                         
 
-                            <pre>test_register_case (unittest.loader._FailedTest)执行——>【错误Error】
+                            <pre>  File "/Users/mlamp/Desktop/python/python-project/project_day20/test_case/test_login_case.py", line 27, in test_login
+    self.assertEqual(expected['code'],result['code'])
+</pre>
+                        
+
+                            <pre>  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+</pre>
+                        
+
+                            <pre>  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+</pre>
+                        
+
+                            <pre>AssertionError: 0 != 1001
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>10</td>
+                    <td class="test_login_class">test_login_class</td>
+                    <td>test_login_10</td>
+                    <td>登录失败-密码长度等于16</td>
+                    <td>0.285s</td>
+                    
+                        <td class="text-danger">失败</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>test_login_10 (test_login_case.test_login_class)执行——>【失败】
+</pre>
+                        
+
+                            <pre>Traceback (most recent call last):
+</pre>
+                        
+
+                            <pre>  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 59, in testPartExecutor
+    yield
+</pre>
+                        
+
+                            <pre>  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 628, in run
+    testMethod()
+</pre>
+                        
+
+                            <pre>  File "/Users/mlamp/Desktop/python/python-project/project_day20/comm_modul/myddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+</pre>
+                        
+
+                            <pre>  File "/Users/mlamp/Desktop/python/python-project/project_day20/test_case/test_login_case.py", line 33, in test_login
+    raise E
+</pre>
+                        
+
+                            <pre>  File "/Users/mlamp/Desktop/python/python-project/project_day20/test_case/test_login_case.py", line 27, in test_login
+    self.assertEqual(expected['code'],result['code'])
+</pre>
+                        
+
+                            <pre>  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+</pre>
+                        
+
+                            <pre>  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+</pre>
+                        
+
+                            <pre>AssertionError: 0 != 1001
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>11</td>
+                    <td class="test_login_class">test_login_class</td>
+                    <td>test_login_11</td>
+                    <td>登录失败-密码长度大于16</td>
+                    <td>0.34s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>test_login_11 (test_login_case.test_login_class)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>12</td>
+                    <td class="test_login_class">test_login_class</td>
+                    <td>test_login_12</td>
+                    <td>登录失败-密码不正确</td>
+                    <td>0.327s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>test_login_12 (test_login_case.test_login_class)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>13</td>
+                    <td class="test_register_class">test_register_class</td>
+                    <td>test_register_01</td>
+                    <td>注册成功</td>
+                    <td>0.334s</td>
+                    
+                        <td class="text-danger">失败</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>test_register_01 (test_register_case.test_register_class)执行——>【失败】
+</pre>
+                        
+
+                            <pre>Traceback (most recent call last):
+</pre>
+                        
+
+                            <pre>  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 59, in testPartExecutor
+    yield
+</pre>
+                        
+
+                            <pre>  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 628, in run
+    testMethod()
+</pre>
+                        
+
+                            <pre>  File "/Users/mlamp/Desktop/python/python-project/project_day20/comm_modul/myddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+</pre>
+                        
+
+                            <pre>  File "/Users/mlamp/Desktop/python/python-project/project_day20/test_case/test_register_case.py", line 32, in test_register
+    raise E
+</pre>
+                        
+
+                            <pre>  File "/Users/mlamp/Desktop/python/python-project/project_day20/test_case/test_register_case.py", line 26, in test_register
+    self.assertEqual(expected['code'],result['code'])
+</pre>
+                        
+
+                            <pre>  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+</pre>
+                        
+
+                            <pre>  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+</pre>
+                        
+
+                            <pre>AssertionError: 0 != 2
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>14</td>
+                    <td class="test_register_class">test_register_class</td>
+                    <td>test_register_02</td>
+                    <td>注册失败-账号已注册</td>
+                    <td>0.333s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>test_register_02 (test_register_case.test_register_class)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>15</td>
+                    <td class="test_register_class">test_register_class</td>
+                    <td>test_register_03</td>
+                    <td>注册失败-手机为空</td>
+                    <td>0.132s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>test_register_03 (test_register_case.test_register_class)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>16</td>
+                    <td class="test_register_class">test_register_class</td>
+                    <td>test_register_04</td>
+                    <td>注册失败-手机号为字符串</td>
+                    <td>0.336s</td>
+                    
+                        <td class="text-danger">失败</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>test_register_04 (test_register_case.test_register_class)执行——>【失败】
+</pre>
+                        
+
+                            <pre>Traceback (most recent call last):
+</pre>
+                        
+
+                            <pre>  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 59, in testPartExecutor
+    yield
+</pre>
+                        
+
+                            <pre>  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 628, in run
+    testMethod()
+</pre>
+                        
+
+                            <pre>  File "/Users/mlamp/Desktop/python/python-project/project_day20/comm_modul/myddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+</pre>
+                        
+
+                            <pre>  File "/Users/mlamp/Desktop/python/python-project/project_day20/test_case/test_register_case.py", line 32, in test_register
+    raise E
+</pre>
+                        
+
+                            <pre>  File "/Users/mlamp/Desktop/python/python-project/project_day20/test_case/test_register_case.py", line 27, in test_register
+    self.assertEqual(expected['msg'],result['msg'])
+</pre>
+                        
+
+                            <pre>  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+</pre>
+                        
+
+                            <pre>  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 1233, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+</pre>
+                        
+
+                            <pre>  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 693, in fail
+    raise self.failureException(msg)
+</pre>
+                        
+
+                            <pre>AssertionError: '无效的手机格式' != '账号已存在'
+- 无效的手机格式
++ 账号已存在
+
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>17</td>
+                    <td class="test_register_class">test_register_class</td>
+                    <td>test_register_05</td>
+                    <td>注册失败-手机号长度10位</td>
+                    <td>0.13s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>test_register_05 (test_register_case.test_register_class)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>18</td>
+                    <td class="test_register_class">test_register_class</td>
+                    <td>test_register_06</td>
+                    <td>注册失败-手机号长度12位</td>
+                    <td>0.149s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>test_register_06 (test_register_case.test_register_class)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>19</td>
+                    <td class="test_register_class">test_register_class</td>
+                    <td>test_register_07</td>
+                    <td>注册失败-手机号非正确手机号</td>
+                    <td>0.158s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>test_register_07 (test_register_case.test_register_class)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>20</td>
+                    <td class="test_register_class">test_register_class</td>
+                    <td>test_register_08</td>
+                    <td>注册失败-密码为空</td>
+                    <td>0.123s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>test_register_08 (test_register_case.test_register_class)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>21</td>
+                    <td class="test_register_class">test_register_class</td>
+                    <td>test_register_09</td>
+                    <td>注册失败-密码数字、字母、特殊字符组成</td>
+                    <td>0.556s</td>
+                    
+                        <td class="text-danger">失败</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>test_register_09 (test_register_case.test_register_class)执行——>【失败】
+</pre>
+                        
+
+                            <pre>Traceback (most recent call last):
+</pre>
+                        
+
+                            <pre>  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 59, in testPartExecutor
+    yield
+</pre>
+                        
+
+                            <pre>  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 628, in run
+    testMethod()
+</pre>
+                        
+
+                            <pre>  File "/Users/mlamp/Desktop/python/python-project/project_day20/comm_modul/myddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+</pre>
+                        
+
+                            <pre>  File "/Users/mlamp/Desktop/python/python-project/project_day20/test_case/test_register_case.py", line 32, in test_register
+    raise E
+</pre>
+                        
+
+                            <pre>  File "/Users/mlamp/Desktop/python/python-project/project_day20/test_case/test_register_case.py", line 26, in test_register
+    self.assertEqual(expected['code'],result['code'])
+</pre>
+                        
+
+                            <pre>  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+</pre>
+                        
+
+                            <pre>  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+</pre>
+                        
+
+                            <pre>AssertionError: 0 != 2
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>22</td>
+                    <td class="test_register_class">test_register_class</td>
+                    <td>test_register_10</td>
+                    <td>注册失败-密码长度7位</td>
+                    <td>0.127s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>test_register_10 (test_register_case.test_register_class)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>23</td>
+                    <td class="test_register_class">test_register_class</td>
+                    <td>test_register_11</td>
+                    <td>注册成功-密码长度等于8</td>
+                    <td>0.378s</td>
+                    
+                        <td class="text-danger">失败</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>test_register_11 (test_register_case.test_register_class)执行——>【失败】
+</pre>
+                        
+
+                            <pre>Traceback (most recent call last):
+</pre>
+                        
+
+                            <pre>  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 59, in testPartExecutor
+    yield
+</pre>
+                        
+
+                            <pre>  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 628, in run
+    testMethod()
+</pre>
+                        
+
+                            <pre>  File "/Users/mlamp/Desktop/python/python-project/project_day20/comm_modul/myddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+</pre>
+                        
+
+                            <pre>  File "/Users/mlamp/Desktop/python/python-project/project_day20/test_case/test_register_case.py", line 32, in test_register
+    raise E
+</pre>
+                        
+
+                            <pre>  File "/Users/mlamp/Desktop/python/python-project/project_day20/test_case/test_register_case.py", line 26, in test_register
+    self.assertEqual(expected['code'],result['code'])
+</pre>
+                        
+
+                            <pre>  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+</pre>
+                        
+
+                            <pre>  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+</pre>
+                        
+
+                            <pre>AssertionError: 0 != 2
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>24</td>
+                    <td class="test_register_class">test_register_class</td>
+                    <td>test_register_12</td>
+                    <td>注册成功-密码长度等于16</td>
+                    <td>0.33s</td>
+                    
+                        <td class="text-danger">失败</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>test_register_12 (test_register_case.test_register_class)执行——>【失败】
+</pre>
+                        
+
+                            <pre>Traceback (most recent call last):
+</pre>
+                        
+
+                            <pre>  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 59, in testPartExecutor
+    yield
+</pre>
+                        
+
+                            <pre>  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 628, in run
+    testMethod()
+</pre>
+                        
+
+                            <pre>  File "/Users/mlamp/Desktop/python/python-project/project_day20/comm_modul/myddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+</pre>
+                        
+
+                            <pre>  File "/Users/mlamp/Desktop/python/python-project/project_day20/test_case/test_register_case.py", line 32, in test_register
+    raise E
+</pre>
+                        
+
+                            <pre>  File "/Users/mlamp/Desktop/python/python-project/project_day20/test_case/test_register_case.py", line 26, in test_register
+    self.assertEqual(expected['code'],result['code'])
+</pre>
+                        
+
+                            <pre>  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+</pre>
+                        
+
+                            <pre>  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+</pre>
+                        
+
+                            <pre>AssertionError: 0 != 2
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>25</td>
+                    <td class="test_register_class">test_register_class</td>
+                    <td>test_register_13</td>
+                    <td>注册失败-密码长度为17位</td>
+                    <td>0.133s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>test_register_13 (test_register_case.test_register_class)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>26</td>
+                    <td class="test_register_class">test_register_class</td>
+                    <td>test_register_14</td>
+                    <td>注册成功-类型值为1</td>
+                    <td>0.319s</td>
+                    
+                        <td class="text-danger">失败</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>test_register_14 (test_register_case.test_register_class)执行——>【失败】
+</pre>
+                        
+
+                            <pre>Traceback (most recent call last):
+</pre>
+                        
+
+                            <pre>  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 59, in testPartExecutor
+    yield
+</pre>
+                        
+
+                            <pre>  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 628, in run
+    testMethod()
+</pre>
+                        
+
+                            <pre>  File "/Users/mlamp/Desktop/python/python-project/project_day20/comm_modul/myddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+</pre>
+                        
+
+                            <pre>  File "/Users/mlamp/Desktop/python/python-project/project_day20/test_case/test_register_case.py", line 32, in test_register
+    raise E
+</pre>
+                        
+
+                            <pre>  File "/Users/mlamp/Desktop/python/python-project/project_day20/test_case/test_register_case.py", line 26, in test_register
+    self.assertEqual(expected['code'],result['code'])
+</pre>
+                        
+
+                            <pre>  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+</pre>
+                        
+
+                            <pre>  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+</pre>
+                        
+
+                            <pre>AssertionError: 0 != 2
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>27</td>
+                    <td class="test_register_class">test_register_class</td>
+                    <td>test_register_15</td>
+                    <td>注册成功-类型值为0</td>
+                    <td>0.366s</td>
+                    
+                        <td class="text-danger">失败</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>test_register_15 (test_register_case.test_register_class)执行——>【失败】
+</pre>
+                        
+
+                            <pre>Traceback (most recent call last):
+</pre>
+                        
+
+                            <pre>  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 59, in testPartExecutor
+    yield
+</pre>
+                        
+
+                            <pre>  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 628, in run
+    testMethod()
+</pre>
+                        
+
+                            <pre>  File "/Users/mlamp/Desktop/python/python-project/project_day20/comm_modul/myddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+</pre>
+                        
+
+                            <pre>  File "/Users/mlamp/Desktop/python/python-project/project_day20/test_case/test_register_case.py", line 32, in test_register
+    raise E
+</pre>
+                        
+
+                            <pre>  File "/Users/mlamp/Desktop/python/python-project/project_day20/test_case/test_register_case.py", line 26, in test_register
+    self.assertEqual(expected['code'],result['code'])
+</pre>
+                        
+
+                            <pre>  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+</pre>
+                        
+
+                            <pre>  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+</pre>
+                        
+
+                            <pre>AssertionError: 0 != 2
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>28</td>
+                    <td class="test_register_class">test_register_class</td>
+                    <td>test_register_16</td>
+                    <td>注册成功-类型非0和1</td>
+                    <td>0.132s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>test_register_16 (test_register_case.test_register_class)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>29</td>
+                    <td class="test_register_class">test_register_class</td>
+                    <td>test_register_17</td>
+                    <td>注册成功-存在注册名格式正确</td>
+                    <td>0.308s</td>
+                    
+                        <td class="text-danger">失败</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>test_register_17 (test_register_case.test_register_class)执行——>【失败】
+</pre>
+                        
+
+                            <pre>Traceback (most recent call last):
+</pre>
+                        
+
+                            <pre>  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 59, in testPartExecutor
+    yield
+</pre>
+                        
+
+                            <pre>  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 628, in run
+    testMethod()
+</pre>
+                        
+
+                            <pre>  File "/Users/mlamp/Desktop/python/python-project/project_day20/comm_modul/myddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+</pre>
+                        
+
+                            <pre>  File "/Users/mlamp/Desktop/python/python-project/project_day20/test_case/test_register_case.py", line 32, in test_register
+    raise E
+</pre>
+                        
+
+                            <pre>  File "/Users/mlamp/Desktop/python/python-project/project_day20/test_case/test_register_case.py", line 26, in test_register
+    self.assertEqual(expected['code'],result['code'])
+</pre>
+                        
+
+                            <pre>  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+</pre>
+                        
+
+                            <pre>  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+</pre>
+                        
+
+                            <pre>AssertionError: 0 != 2
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>30</td>
+                    <td class="test_register_class">test_register_class</td>
+                    <td>test_register_18</td>
+                    <td>注册失败-注册名长度为11位</td>
+                    <td>0.165s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>test_register_18 (test_register_case.test_register_class)执行——>【通过】
 </pre>
                         
                         
@@ -498,9 +1638,9 @@ ModuleNotFoundError: No module named 'openpyxl'
                     show: false
                 },
                 data: [
-                    {value: 0, name: '通过'},
-                    {value: 0, name: '失败'},
-                    {value: 2, name: '错误'},
+                    {value: 19, name: '通过'},
+                    {value: 11, name: '失败'},
+                    {value: 0, name: '错误'},
                     {value: 0, name: '跳过'}
                 ]
             }
@@ -520,8 +1660,8 @@ ModuleNotFoundError: No module named 'openpyxl'
             {
                 name: '测试结果',
                 type: 'gauge',
-                detail: {formatter: '0.00%'},
-                data: [{value: '0.00', name: '用例通过率'}],
+                detail: {formatter: '63.33%'},
+                data: [{value: '63.33', name: '用例通过率'}],
                 axisLine: {
                     lineStyle: {
                         color: [

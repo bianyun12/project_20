@@ -5,4 +5,10 @@ name:bianer
 project:test
 """
 
-print("ddddddddddddddddddddddddddddd")
+print("""
+1.这个是自动化脚本执行的前置条件
+2.每当这个脚本执行完成后再执行自动化脚本
+3.执行完自动化脚本后发送测试报告邮件
+
+
+""")

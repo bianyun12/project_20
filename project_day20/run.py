@@ -15,3 +15,9 @@ runner=TestRunner(suite,
                  desc=conf.get('report','desc'),
                  templates=1)
 runner.run()
+
+runner.send_email(host="smtp.qq.com",
+                  port=465,
+                  user="1425623024@qq.com",
+                  password="xbrergljrkuyfiaa",
+                  to_addrs=['1425623024@qq.com',"3064962129@qq.com","3242285670@qq.com"])
